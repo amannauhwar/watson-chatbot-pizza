@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Landing Page | Welcome</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Use the Inter font family defined in the head */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for fade-in effect on load */
+        .fade-in {
+            animation: fadeInAnimation 1s ease-in-out;
+        }
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- =========== Header/Navigation =========== -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-gray-900 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-600 mr-2"><path d="M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path d="M12 19.5A6.5 6.5 0 0 0 18.5 13H19a2 2 0 1 0 0-4h-.5A6.5 6.5 0 0 0 12 2.5v-1a2 2 0 1 0-4 0v1A6.5 6.5 0 0 0 2.5 13H2a2 2 0 1 0 0 4h.5A6.5 6.5 0 0 0 12 19.5v1a2 2 0 1 0 4 0v-1Z"/></svg>
+                Project Launch
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 transition duration-300">Features</a>
+                <a href="#pricing" class="text-gray-600 hover:text-indigo-600 transition duration-300">Pricing</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+                <a href="#" class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow">Get Started</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#features" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Features</a>
+            <a href="#pricing" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Pricing</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+            <div class="px-6 py-4">
+                 <a href="#" class="block bg-indigo-600 text-white text-center px-5 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========== Hero Section =========== -->
+        <section class="bg-white fade-in">
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">Build Your Next Idea Faster</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">The ultimate toolkit to launch your projects. A modern, simple, and beautifully crafted landing page to get you started on the right foot.</p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#" class="bg-indigo-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-indigo-700 transition duration-300 shadow-lg transform hover:scale-105">Start for Free</a>
+                    <a href="#" class="bg-gray-200 text-gray-800 px-8 py-3 rounded-lg text-lg font-medium hover:bg-gray-300 transition duration-300 transform hover:scale-105">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Features Section =========== -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Why You'll Love This</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                             <i data-lucide="zap" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Blazing Fast</h3>
+                        <p class="text-gray-600">Built with performance in mind. Our code is optimized for speed and efficiency to give you the best experience.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="smartphone" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Fully Responsive</h3>
+                        <p class="text-gray-600">Looks great on any device. From mobile phones to desktops, your content will always be perfectly displayed.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="settings-2" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Easy to Customize</h3>
+                        <p class="text-gray-600">Change colors, fonts, and layouts with ease. The code is clean and well-commented for developers.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Call to Action Section =========== -->
+        <section id="pricing" class="bg-indigo-600">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
+                <p class="text-indigo-200 text-lg mb-8 max-w-xl mx-auto">Join thousands of developers and creators who are building their futures with our tools. Start your free trial today.</p>
+                <a href="#" class="bg-white text-indigo-600 px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition duration-300 shadow-xl transform hover:scale-105">Sign Up Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========== Footer =========== -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">&copy; 2025 Project Launch. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i data-lucide="github"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
